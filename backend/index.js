@@ -9,12 +9,21 @@ const app = express();
 app.use(cors()); //autorise les requêtes cross-orgin
 app.use(express.json()); //lire les données envoyées en JSON 
 
+//Route test
 app.get('/', (req, res) => {
     res.send('Backend opérationnel !');
 });
 
 const authRoutes = require('./routes/auth');
 app.use('/api/auth', authRoutes);
+
+app.use('/uploads', express.static('uploads')); //Permet d'accéder aux fichiers uploadés
+
+const panierRoutes = require('./routes/panier');
+app.use('/api/panier', panierRoutes);
+
+const listeEnvieRoutes = require('./routes/liste-envie');
+app.use('/api/liste-envie', listeEnvieRoutes);
 
 //Connexion à Mongo
 mongoose.connect(process.env.MONGO_URI)
