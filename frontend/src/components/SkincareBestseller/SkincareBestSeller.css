@@ -1,0 +1,17 @@
+.skincare {
+  background-color: rgb(245, 240, 245);
+  padding: 30px;
+}
+.backVideo {
+  height: 50vh;
+  width: 50vw;
+} 
+
+.skincare > h2{
+  font-size: 50px;
+  text-align: center;
+  padding: 30px;
+  color: #4f4f4f;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}

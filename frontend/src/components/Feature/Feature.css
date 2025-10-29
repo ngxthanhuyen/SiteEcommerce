@@ -1,0 +1,166 @@
+.feature {
+    padding: 60px;
+    margin: 2% 0;
+    color: rgb(171, 91, 104);
+    background-color: #fbf9fa;
+}
+
+.section-title {
+    margin-block-end: 40px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lobster Two', cursive;
+}
+
+.flex-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-content {
+    position: relative;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 30%;
+}
+
+.feature-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.card-title {
+    color: #3b3b3b;
+    font-size: 40px;
+    font-family: 'Bodoni Moda', serif;
+    margin: 20px 0;
+}
+
+.card-icon {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.card-text {
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(137, 100, 137);
+    line-height: 1.6;
+}
+
+.flex-list.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 150px; 
+}
+
+@media screen and (max-width: 1024px) {
+    .feature {
+        padding: 40px;
+    }
+    
+    .section-title {
+        font-size: 48px;
+        margin-block-end: 30px;
+    }
+    
+    .feature-content {
+        padding: 25px;
+        min-width: 250px;
+    }
+    
+    .card-title {
+        font-size: 32px;
+        margin: 15px 0;
+    }
+    
+    .card-icon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .card-text {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    
+    .flex-list.about-grid {
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .feature {
+        padding: 30px 20px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+        margin-block-end: 20px;
+    }
+    
+    .flex-list {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .feature-content {
+        padding: 20px;
+        min-width: 100%;
+    }
+    
+    .card-title {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+    
+    .card-icon {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .card-text {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+    .flex-list.about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .feature {
+        padding: 25px 15px;
+    }
+    
+    .section-title {
+        font-size: 30px;
+    }
+    
+    .card-title {
+        font-size: 24px;
+    }
+    
+    .card-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .card-text {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 512 512" fill="none">
+  <!-- Chariot -->
+  <path d="M120 180 H380 L360 300 H160 Z" stroke="black" stroke-width="8" fill="none" />
+  <!-- Poignée -->
+  <line x1="120" y1="180" x2="100" y2="120" stroke="black" stroke-width="8" />
+  <!-- Roues -->
+  <circle cx="180" cy="330" r="15" stroke="black" stroke-width="8" fill="none"/>
+  <circle cx="320" cy="330" r="15" stroke="black" stroke-width="8" fill="none"/>
+  <!-- Ligne sol -->
+  <line x1="60" y1="360" x2="440" y2="360" stroke="black" stroke-width="4" stroke-dasharray="20,10"/>
+  
+  <!-- Bulles / éléments décoratifs -->
+  <circle cx="130" cy="60" r="5" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="400" cy="90" r="8" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="200" cy="50" r="3" stroke="black" stroke-width="2" fill="none"/>
+  
+  <!-- Croix (X) -->
+  <line x1="260" y1="70" x2="280" y2="90" stroke="black" stroke-width="5"/>
+  <line x1="280" y1="70" x2="260" y2="90" stroke="black" stroke-width="5"/>
+</svg>

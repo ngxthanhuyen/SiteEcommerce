@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Pacifico&family=Playfair+Display&family=Sacramento&display=swap');
+/*Services*/
+.service {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.service .container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.service-item-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 10px;
+}
+
+.service-item-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+}
+
+.service-item-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #6a6a6a;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+.bg-image4 {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Playfair', serif;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  text-align: left;
+
+}
+
+.logo2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+  font-weight: bold;
+  color: rgb(175, 111, 111);
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  max-width: 340px;
+}
+
+.social-list {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  background-color: pink;
+  color: white;
+  font-size: 27px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.social-link .logo-facebook {
+    height: 30px;
+    font-size: 30px;
+}
+.social-link:hover {
+  background-color: #a47980;
+  color: white;
+}
+
+.footer-list {
+    font-size: 20px;
+    text-align: left;
+}
+.footer-list-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: pink;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.footer-list-title::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 2px;
+  background-color: pink;
+  margin-top: 6px;
+}
+
+.footer-link {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 8px;
+  display: block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-link:hover {
+  transform: translateX(5px);
+  color: pink;
+}
+
+.footer-nav-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-nav-item .icon-box {
+  color: pink;
+  font-size: 30px;
+}
+
+
+.footer-list-title2 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: black;
+  position: relative;
+}
+
+.footer-list-title2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 2px;
+  background-color: pink;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  background-color: #f9dceb;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-bottom > .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.logoWithIcon {
+  position: relative;
+  width: 100px; 
+  height: 80px;
+  display: inline-block;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.logo3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-family: 'Mr De Haviland', cursive;
+  font-size: 50px; 
+  font-weight: 600;
+  color: rgb(175, 111, 111);
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.copyright {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .service-list {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .service-item {
+        flex: 1 1 45%;
+        min-width: 300px;
+    }
+
+    .service-item-icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .service-item-title {
+        font-size: 24px;
+    }
+
+    .service-item-text {
+        font-size: 16px;
+    }
+
+    .footer .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer-list-title::after,
+    .footer-list-title2::before {
+        width: 120px;
+    }
+
+    .logo2 {
+        font-size: 32px;
+    }
+
+    .footer-text,
+    .footer-link,
+    .footer-list {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 18px;
+    }
+
+    .logo3 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .service {
+        padding: 30px 0;
+    }
+
+    .service-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .service-item {
+        flex: 1 1 100%;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .service-item-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .service-item-title {
+        font-size: 20px;
+    }
+
+    .service-item-text {
+        font-size: 14px;
+    }
+
+    .footer .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-list-title::after,
+    .footer-list-title2::before {
+        width: 100px;
+    }
+
+    .logo2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .footer-text,
+    .footer-link,
+    .footer-list {
+        font-size: 18px;
+    }
+
+    .footer-list-title {
+        font-size: 22px;
+    }
+
+    .social-link {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+
+    .footer-bottom > .wrapper {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .logo3 {
+        font-size: 35px;
+    }
+
+    .copyright {
+        font-size: 16px;
+        order: 2;
+    }
+
+    .logoWithIcon {
+        order: 1;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .service-item-title {
+        font-size: 18px;
+    }
+
+    .service-item-text {
+        font-size: 13px;
+    }
+
+    .logo2 {
+        font-size: 24px;
+    }
+
+    .footer-text,
+    .footer-link,
+    .footer-list {
+        font-size: 16px;
+
+    }
+
+    .logo3 {
+        font-size: 30px;
+    }
+}

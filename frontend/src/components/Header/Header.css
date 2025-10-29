@@ -1,0 +1,410 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+
+/* Reset & Base Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  font: inherit;
+  display: block;
+}
+
+ion-icon {
+  pointer-events: none;
+  --ionicon-stroke-width: 25px;
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 3px;
+}
+
+/* Containers */
+.container {
+  padding-inline: 15px;
+}
+
+/* Alert Banner */
+.alert {
+  background-color: rgb(168, 107, 107);
+  font-size: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  padding-block: 8px;
+}
+
+.highlight {
+    color: rgb(126, 0, 0);
+    font-size: 22px;
+}
+/* Logo */
+.logo {
+  display: inline-block;
+  align-items: center;
+  font-family: 'Mr De Haviland', cursive;
+  color: rgb(175, 111, 111);
+  position: relative;
+  text-align: center;
+}
+
+/* 3. L’image du cœur */
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+  background-position: 50% 50%;
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.logo span {
+  position: relative;
+  z-index: 1;
+  font-size: 120px;
+}
+
+/* Search */
+.search-field {
+  width: 300px;
+  font-size: 20px;
+  border: 2px solid rgb(186, 134, 142);
+  padding: 10px 45px 10px 20px; 
+  outline: none;
+}
+
+.search-field::placeholder {
+  color: rgb(181, 181, 181);
+  font-size: 16px;
+}
+
+/* Header Layout */
+.header {
+  position: relative;
+  padding-bottom: 60px;
+  margin-bottom: 10px;
+}
+
+.header-top {
+  background-color: white;
+  padding-block: 24px 0;
+}
+
+.header-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-inline: 30px;
+}
+
+.header .input-wrapper {
+  position: relative;
+  width: 400px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 60px;
+}
+
+.search-submit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+/* Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.loginButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-action-btn {
+  position: relative;
+  font-size: 28px;
+}
+
+.btn-text {
+  margin-right: -10px;
+}
+
+.header-action-btn ion-icon {
+  width: 35px; 
+  height: 35px;
+  font-size: 30px; 
+}
+
+.header-action-btn:active {
+  background-color: #e0e0e0; 
+  border-radius: 8px;
+}
+.header-action-btn:hover,
+.header-action-btn:active {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.header-action-btn .btn-badge {
+  position: absolute;
+  top: -5px;  
+  right: -1px; 
+  background-color: black;
+  color: white;
+  font-size: 14.6px;
+  min-width: 18px;
+  height: 20px;
+  line-height: 1.4;
+  border-radius: 20px;
+  box-shadow: 0 -2px 20px hsla(0, 0%, 0%, 0.1);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px; 
+}
+
+.header-action-btn:last-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-action-label {
+  font-size: 8px;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding-block: 18px;
+  z-index: 4;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  gap : 100px;
+}
+
+.navbar-link {
+  color: #eebfc1;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(to top, rgba(120, 45, 45, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size 0.5s;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  color: rgb(148, 80, 80);
+  background-size: 100% 100%;
+}
+
+.navbar-link.active {
+  color: rgb(148, 80, 80);
+  background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 11px;
+  }
+
+  .header-top .container {
+    padding-inline: 20px;
+    gap: 15px;
+  }
+
+  .header .input-wrapper {
+    width: 300px;
+  }
+
+  .search-field {
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 40px 8px 15px;
+  }
+
+  .search-submit {
+    font-size: 20px;
+  }
+
+  .header-actions {
+    gap: 30px;
+  }
+
+  .header-action-btn {
+    font-size: 24px;
+  }
+
+  .navbar-list {
+    gap: 70px;
+  }
+
+  .navbar-link {
+    font-size: 20px;
+  }
+
+  .logo span {
+    font-size: 100px;
+  }
+
+  .alert {
+    font-size: 16px;
+    padding-block: 6px;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+
+  .header {
+    padding-bottom: 50px;
+  }
+
+  .header-top .container {
+    flex-direction: column;
+    padding-inline: 15px;
+    gap: 15px;
+  }
+
+  .header .input-wrapper {
+    width: 100%;
+    order: 3;
+    margin-top: 15px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .header-action-btn {
+    font-size: 22px;
+  }
+
+  .navbar {
+    padding-block: 12px;
+  }
+
+  .navbar-list {
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+
+  .navbar-link {
+    font-size: 16px;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .logo span {
+    font-size: 80px;
+  }
+
+  .alert {
+    font-size: 14px;
+    padding-block: 5px;
+  }
+
+  .highlight {
+    font-size: 16px;
+  }
+
+  .header-action-btn .btn-badge {
+    font-size: 12px;
+    min-width: 16px;
+    height: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 9px;
+  }
+
+  .navbar-list {
+    gap: 20px;
+  }
+
+  .navbar-link {
+    font-size: 14px;
+  }
+
+  .logo span {
+    font-size: 70px;
+  }
+
+  .header-action-btn {
+    font-size: 20px;
+  }
+
+  .search-field {
+    padding: 6px 35px 6px 12px;
+    font-size: 16px;
+  }
+
+  .search-submit {
+    font-size: 18px;
+  }
+}

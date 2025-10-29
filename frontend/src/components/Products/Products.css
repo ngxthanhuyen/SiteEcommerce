@@ -1,0 +1,259 @@
+/* Product Styles */
+.product {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap : 50px;
+}
+
+.product-showcase {
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
+
+.showcase-content {
+    width: 280px;
+    text-align: left;
+}
+
+.showcase .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.showcase .btn-action {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: rgb(245, 169, 182);
+    color: white;
+}
+
+.showcase .btn-action:hover {
+    background-color: white;
+    color: pink;
+    border-color: black;
+}
+
+.title {
+    color: rgb(186, 105, 119);
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    font-size: 40px;
+    border-bottom: 2px solid rgb(215, 144, 156);
+    width: 300px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.showcase-container {
+    min-width: 100%;
+    min-height: 60px;
+}
+
+.showcase-container .showcase {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid hsl(0, 0%, 93%);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+    width: 400px;
+}
+
+.showcase:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.showcase-img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: -10px;
+    transition: transform 0.5s ease;
+}
+
+.showcase-img-box:hover .showcase-img {
+  transform: scale(1.05);
+}
+
+.showcase-title {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 2px;
+}
+
+.showcase-category {
+    width: max-content;
+    color: grey;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 3px;
+}
+
+.showcase-category:hover {
+    color: pink;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(197, 48, 48);
+}
+
+.price-box del {
+    font-size: 18px;
+    color: silver;
+}
+
+/* Styles pour le cœur rempli */
+.btn-action.in-wishlist {
+  color: #e91e63;
+  background-color: rgba(233, 30, 99, 0.1);
+}
+
+.btn-action.in-wishlist:hover {
+  background-color: rgba(90, 13, 85, 0.2);
+}
+
+/* Modal de notification */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease;
+}
+
+.modal-icon {
+  font-size: 40px;
+  color: rgb(253, 177, 189);
+  margin-bottom: 10px;
+}
+
+.modal-icon ion-icon {
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1500px) {
+  .product {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .showcase {
+    width: 300px;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .showcase-content {
+    width: 240px;
+  }
+
+  .title {
+    font-size: 32px;
+    width: 250px;
+  }
+
+  .showcase-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .showcase {
+    width: 100%;
+    max-width: 350px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .showcase-content {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .showcase-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .showcase-title {
+    font-size: 16px;
+  }
+
+  .showcase-category {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 16px;
+  }
+
+  .price-box del {
+    font-size: 14px;
+  }
+}

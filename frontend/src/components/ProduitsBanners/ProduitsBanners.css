@@ -1,0 +1,175 @@
+.produitsBanners {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  overflow: auto hidden;
+  scroll-snap-type: inline mandatory;
+  overscroll-behavior-inline: contain;
+}
+
+.slider-item {
+  position: relative;
+  min-width: 100%;
+  max-height: 100vh;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.slider-item .produitsBanners-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
+  position: relative;
+}
+
+.slider-item .btn-action {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: rgb(245, 169, 182);
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.slider-item .btn-action ion-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.slider-item .btn-action:hover {
+    background-color: white;
+    color: pink;
+    border-color: black;
+}
+
+.produitsBanners-content {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.8);
+  bottom: 25px;
+  left: 25px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  max-width: 900px;
+  font-size: 20px;
+  margin: auto 10px;
+  text-align: left;
+  transform: translateY(-50%);
+}
+
+.produitsBanners-subtitle {
+  color: pink;
+  font-size: 80px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-family: 'Cizel';
+}
+
+.produitsBanners-title {
+  color: rgb(158, 209, 229);
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 34px;
+}
+
+.produitsBanners-text {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.produitsBanners-btn {
+  background: pink;
+  color: white;
+  width: max-content;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+.produitsBanners-btn:hover {
+  background: rgb(156, 212, 241);
+}
+
+@media (max-width: 768px) {
+  .produitsBanners-subtitle {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+
+  .produitsBanners-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .produitsBanners-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .produitsBanners-btn {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-top: 6px;
+  }
+
+  .produitsBanners-content {
+    max-width: 90%;
+    left: 10px;
+    bottom: 15px;
+    padding: 12px 15px;
+    top: auto;
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .produitsBanners-subtitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .produitsBanners-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .produitsBanners-text {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .produitsBanners-btn {
+    font-size: 14px;
+    padding: 4px 8px;
+    margin-top: 5px;
+  }
+
+  .produitsBanners-content {
+    max-width: 95%;
+    left: 5px;
+    bottom: 10px;
+    padding: 10px 12px;
+  }
+}

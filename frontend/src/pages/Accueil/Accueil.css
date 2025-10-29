@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Pacifico&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Pacifico&family=Playfair+Display&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400;700;800;900&family=Dancing+Script&family=Pacifico&family=Playfair+Display&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:opsz,wght@6..96,500&family=Cinzel:wght@400;700;800;900&family=Dancing+Script&family=Lobster+Two&family=Pacifico&family=Playfair+Display&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:opsz,wght@6..96,500&family=Cinzel:wght@400;700;800;900&family=Dancing+Script&family=Lobster+Two&family=Mr+De+Haviland&family=Pacifico&family=Playfair+Display&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda:opsz,wght@6..96,500&family=Cinzel:wght@400;700;800;900&family=Dancing+Script&family=Lobster+Two&family=Montserrat&family=Mr+De+Haviland&family=Pacifico&family=Playfair+Display&family=Sacramento&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.back-video {
+   display: block;
+   width: 100%;
+}
+/* Section Hero  */
+.accueil {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0; 
+    margin: 0; 
+}
+
+.makeup-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.accueil-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    color: white; 
+    text-align: left;
+    margin : auto 0;
+    margin-left: 50px;
+}
+
+/* Correction des styles typographiques */
+.accueil h3 {
+    font-size: 40px;
+    color:#fff;
+    text-align: left;
+}
+
+.accueil h1 {
+    font-size: 65px;
+    color: rgb(156, 90, 107);
+    font-family: 'Cizel';
+    text-align: left;
+}
+
+.accueil-text {
+    font-size: 22px;
+    color: rgb(175, 111, 111);
+    line-height: 50px;
+    font-family: 'Playfair Display', serif;
+}
+
+em {
+    font-weight: 900;
+}
+
+.accueil-btn {
+    display: inline-block;
+    border-radius: 100px;
+    margin-top: 20px;
+    background: rgb(175, 111, 111);
+    color: #fff;
+    padding: 16px 22px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.accueil-btn:hover {
+    background-color: #fff;
+    color: rgb(175, 111, 111);
+    border: #020202 1px solid;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* About Section */
+.about {
+    position: relative;
+    margin-left: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 80px;
+    color: rgb(164, 90, 102);
+    padding: 16px;
+    background: hsla(0, 0%, 100%, 0.8);
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 0%;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+.img-container {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.img-container img {
+    border: 24px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.img-container h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: #020202;
+    padding: 6px;
+    text-align: center;
+    mix-blend-mode: screen;
+    background: hsla(0, 0%, 100%, 0.8);
+    width: 80%;
+}
+
+.content {
+    flex: 1 1 40rem;
+    text-align: left;
+}
+
+.content .content-title {
+    font-size: 40px;
+    color: #d8979a;
+    font-family: 'Cizel', serif;
+    text-align: left;
+}
+
+.content p {
+    font-size: 21px;
+    color: #7e7e7e;
+    padding: 8px 0;
+    line-height: 1.5;
+    font-family: 'Playfair', serif;
+    margin-right: 100px;
+    margin-top: -50px;
+}
+
+.accueil-btn2 {
+    display: inline-block;
+    border-radius: 0px;
+    padding: 10px 10px;
+    background: #d8979a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: 'Cizel', serif;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accueil-btn2:hover {
+    background-color: #fff;
+    color: #d8979a;
+    border: #020202 1px solid;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Hero Section */
+  .accueil {
+    padding: 0 40px;
+    min-height: 80vh;
+  }
+  
+  .accueil h3 {
+    font-size: 34px;
+  }
+  
+  .accueil h1 {
+    font-size: 54px;
+    margin-bottom: 15px;
+  }
+  
+  .accueil-text {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 90%;
+  }
+  
+  .btn {
+    padding: 14px 28px;
+    font-size: 20px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 40px;
+    margin-bottom: -40px;
+  }
+  
+  .heading {
+    font-size: 65px;
+    padding: 12px;
+  }
+  
+  .line {
+    flex-direction: row;
+    gap: 25px;
+  }
+  
+  .img-container img {
+    border-width: 18px;
+  }
+  
+  .content h3 {
+    font-size: 34px;
+  }
+  
+  .content p {
+    font-size: 18px;
+    margin-right: 40px;
+  }
+  
+  .btn2 {
+    padding: 11px 22px;
+    font-size: 20px;
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Hero Section */
+  .accueil {
+    padding: 0 25px;
+    text-align: center;
+    justify-content: center;
+    min-height: 70vh;
+  }
+  
+  .accueil-content {
+    margin-left: 0;
+  }
+  
+  .accueil h3 {
+    font-size: 26px;
+  }
+  
+  .accueil h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+  
+  .accueil-text {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 auto 25px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 30px 20px;
+    margin-bottom: -160px;
+  }
+  
+  .heading {
+    font-size: 42px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .line {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about.img-container img {
+    border-width: 12px;
+    width: 100%;
+  }
+  
+  .img-container h3 {
+    font-size: 22px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .content h3 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin-right: 0;
+    padding: 8px 0;
+  }
+  
+  .btn2 {
+    padding: 10px 16px;
+    font-size: 16px;
+    margin: 5px auto;
+  }
+}
+@media (max-width: 767px) {
+  .img-container {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 0 10px; 
+  }
+
+  .img-container img {
+    width: 100%; 
+    height: auto; 
+    border-width: 12px; 
+    max-width: 100%; 
+    display: block; 
+  }
+
+  .img-container h3 {
+    font-size: 20px; 
+    width: 90%;
+    padding: 4px; 
+  }
+}
